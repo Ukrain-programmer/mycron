@@ -1,0 +1,4 @@
+* 11 * * *  cd  /home/tim/cron && ./print.py
+#* * * * * echo "Test" >  /home/tim/cron/test2.txt
+
+
