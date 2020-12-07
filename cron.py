@@ -23,6 +23,7 @@ def parent():
     time_list = []
     iter_list = []
     counters =[]
+    logging.info("Start file processing")
     cron = CronTab(tabfile='task.tab')
     for word in cron:
         str_word =str(word)
@@ -46,7 +47,8 @@ def parent():
         compare_time = iter_list[j].get_next(datetime)
         time_list.append(compare_time)
 
-
+    logging.info("File processing is done")
+    logging.info("Read job(s): '{}'".format(len(word_list)))
     size = len(word_list)
     while True:
 
@@ -54,7 +56,7 @@ def parent():
         for i in range(size):
             if time_list[i] == datetime(datetime.now().year, datetime.now().month, datetime.now().day, datetime.now().hour,datetime.now().minute):
                 time_list[i] = iter_list[i].get_next(datetime)
-                logging.info("Starting process")
+                logging.info("Starting process command: '{}'".format((word_list[i][counters[i]:])))
                 pid = os.fork()
                 if pid == 0:
 

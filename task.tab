@@ -1,4 +1,11 @@
 * 11 * * *  cd  /home/tim/cron && ./print.py
-* * * * * echojjjj "Test" >  /home/tim/cron/test2.txt
+* * * * * echo "Test_1" >  /home/tim/cron/test2.txt
+* * * * * echo "Test_2" >  /home/tim/cron/test2.txt
+* * * * * echo "Test_3" >  /home/tim/cron/test2.txt
+20 2 25-31 3 6 echo "Before" > /home/tim/cron/test_time.txt
+1 3 25-31 3 6 echo "In time" > /home/tim/cron/test_time.txt
+20 4 25-31 3 6 echo "After" > /home/tim/cron/test_time.txt
 
-
+20 3 25-31 10 6 "Before" > /home/tim/cron/test_time.txt
+1 4 25-31 10 6 "IN TIME" > /home/tim/cron/test_time.txt
+20 5 25-31 10 6 "After" > /home/tim/cron/test_time.txt
