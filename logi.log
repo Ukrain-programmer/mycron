@@ -1,7 +1,0 @@
-2020-11-30 21:19:47,629:root:INFO: Start file processing
-2020-11-30 21:19:47,631:root:INFO: File processing is done
-2020-11-30 21:19:47,631:root:INFO: Read job(s): '3'
-2020-11-30 21:20:00,647:root:INFO: Starting process command: 'echo "Test_1" >  /home/tim/cron/test2.txt'
-2020-11-30 21:20:00,649:root:INFO: Finish process
-2020-11-30 21:20:00,651:root:INFO: Starting process command: 'echo "Test_2" >  /home/tim/cron/test2.txt'
-2020-11-30 21:20:00,653:root:INFO: Finish process
